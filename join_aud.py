@@ -1,7 +1,6 @@
 import torch
 import torchaudio
 import matplotlib.pyplot as plt
-from torchaudio.transforms import Spectrogram
 
 waveform, sample_rate = torchaudio.load("synth.wav")
 print("Tensor shape:", waveform.shape)
