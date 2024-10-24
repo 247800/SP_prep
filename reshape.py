@@ -18,3 +18,7 @@ print(f"Padded Tensor Shape:", padded_tensor.shape)
 # reshape padded tenzoru do pozadovaneho tvaru (batch, 2^16, 1)
 reshaped_tensor = padded_tensor.reshape((8,65536,1))
 print(f"Reshaped Tensor Shape:", reshaped_tensor.shape)
+
+# zkraceni puvodniho tenzoru: chceme zkratit cas nahravky, potrebujeme tedy snizit pocet vzorku
+trimmed_tensor = tensor[0:250000,:]
+print(f"Trimmed Tensor Shape:", trimmed_tensor.shape)
