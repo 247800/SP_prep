@@ -18,7 +18,7 @@ print(f"Padded Tensor Shape:", padded_tensor.shape)
 reshaped_tensor = padded_tensor.reshape((8,65536,1))
 print(f"Reshaped Tensor Shape:", reshaped_tensor.shape)
 
-#jiny zpusob
+#jiny zpusob: takto bychom si mohli pripravit, po jakych davkach bychom data zpracovavali
 size = pow(2,16)
 batch = tensor[size * n:size * (n+1)]
 
